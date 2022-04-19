@@ -1,0 +1,5 @@
+[01-Aug-2020 20:03:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home3/vasstspa/public_html/minibuscomparison/routes/web.php on line 121
+[01-Aug-2020 22:02:34 UTC] PHP Fatal error:  Class 'Broadcast' not found in /home3/vasstspa/public_html/minibuscomparison/routes/channels.php on line 14
+[01-Aug-2020 22:40:05 UTC] PHP Fatal error:  Class 'Route' not found in /home3/vasstspa/public_html/minibuscomparison/routes/api.php on line 16
+[02-Aug-2020 02:40:30 UTC] PHP Parse error:  syntax error, unexpected '?' in /home3/vasstspa/public_html/minibuscomparison/routes/admin.php on line 27
+[03-Aug-2020 18:54:29 UTC] PHP Fatal error:  Class 'Artisan' not found in /home3/vasstspa/public_html/minibuscomparison/routes/console.php on line 16

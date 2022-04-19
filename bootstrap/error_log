@@ -1,0 +1,4 @@
+[31-Jul-2020 14:38:07 UTC] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[31-Jul-2020 14:38:07 UTC] PHP Fatal error:  Unknown: Failed opening required '/home3/vasstspa/public_html/minibuscomparison/wordfence-waf.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in Unknown on line 0
+[31-Jul-2020 14:38:10 UTC] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[31-Jul-2020 14:38:10 UTC] PHP Fatal error:  Unknown: Failed opening required '/home3/vasstspa/public_html/minibuscomparison/wordfence-waf.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in Unknown on line 0

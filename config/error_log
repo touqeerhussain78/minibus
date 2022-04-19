@@ -1,0 +1,4 @@
+[01-Aug-2020 14:52:27 UTC] PHP Fatal error:  Call to undefined function env() in /home3/vasstspa/public_html/minibuscomparison/config/mail.php on line 19
+[01-Aug-2020 15:25:55 UTC] PHP Fatal error:  Call to undefined function env() in /home3/vasstspa/public_html/minibuscomparison/config/app.php on line 16
+[01-Aug-2020 16:52:38 UTC] PHP Fatal error:  Call to undefined function env() in /home3/vasstspa/public_html/minibuscomparison/config/queue.php on line 16
+[01-Aug-2020 16:59:46 UTC] PHP Fatal error:  Call to undefined function env() in /home3/vasstspa/public_html/minibuscomparison/config/cache.php on line 21

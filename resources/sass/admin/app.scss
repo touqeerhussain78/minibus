@@ -1,0 +1,40 @@
+@import url("../../../public/administrator/app-assets/css/vendors.css");
+@import url("../../../public/administrator/app-assets/css/app.css");
+@import url("../../../public/administrator/app-assets/css/core/menu/menu-types/vertical-menu.css");
+@import url("../../../public/administrator/assets/css/style.css");
+@import url("../../../public/administrator/app-assets/vendors/css/tables/datatable/datatables.min.css");
+@import "toastr";
+
+.is-visible{
+    color: red;
+}
+
+
+.modall {
+    padding: 0 20px !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.upload-holder{
+    a {
+        img{
+            width: 150px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    }
+}
+
+.rm_thumb{
+    background: #ff4848;
+    color: white !important;
+    padding: 7px;
+}
