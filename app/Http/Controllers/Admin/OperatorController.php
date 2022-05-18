@@ -87,6 +87,16 @@ class OperatorController extends Controller
             }
             $operator->addMinibuses($request, $operator);
             $operator->notify(new UserRegistration('user'));
+            \Notification::send(Admin::all(), new AdminNotification('Operator Registered', 'A new operator Name:'.$operator->name.' has been registered on Minibus'));
+            // foreach (Admin::all() as $admin) {
+            //     $admin_email = $admin->email;
+            //     $mail = Mail::raw('Operator Registered', 'A new operator Name:'.$operator->name.' has been registered on Minibus', function ($message) use($admin_email) {
+            //         $message->to([$admin_email])
+            //             ->subject('Operator Registered - MINIBUS');
+            //     });
+            //     \Log::info($mail);
+            // }
+
             DB::commit();
         }catch( \Exception $e){
             DB::rollback();

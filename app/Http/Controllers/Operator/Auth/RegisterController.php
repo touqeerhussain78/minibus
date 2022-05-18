@@ -20,6 +20,7 @@ use App\Notifications\AdminNotification;
 use App\Admin;
 use Twilio\Rest\Client;
 use Twilio\Jwt\ClientToken;
+use Mail;
 
 
 class RegisterController extends Controller
@@ -209,6 +210,15 @@ class RegisterController extends Controller
         $operator = Session::get('operator_data');
         
         if(($operator['auth_code_phone'] == $request->auth_code_phone) && ($operator['auth_code_email'] == $request->auth_code_email)){
+
+            foreach (Admin::all() as $admin) {
+                $admin_email = $admin->email;
+                $mail = Mail::raw('A new operator Name:'.$operator['name'].' has been registered on Minibus', function ($message) use($admin_email) {
+                    $message->to(trim($admin_email))->subject('Operator Registered - MINIBUS')->from('richardsteve979@gmail.com');
+                  }); 
+                \Log::info($mail);
+            }
+
             return response()->json([
                 'status'=>true,
                 'message'=> 'Account verified successfully'
@@ -305,6 +315,7 @@ class RegisterController extends Controller
 
         try{
             \Mail::to($operator_data['email'])->send(new RegisterVerificationCode($operator_data));
+            
         }catch(\Exception $ex){}
         
         return response()->json([

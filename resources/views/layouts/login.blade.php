@@ -63,7 +63,7 @@
 
 
 <script src="{{ asset('/frontend/js/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHPUufTlBkF5NfBT3uhS9K4BbW2N-mkb4&libraries=places"></script>
+{{-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHPUufTlBkF5NfBT3uhS9K4BbW2N-mkb4&libraries=places"></script> --}}
 <script src="{{ asset('/frontend/js/app.js') }}"></script>
 <script src="{{ asset('/frontend/js/function.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>

@@ -69,43 +69,49 @@ class View extends Component {
                                             </div>
                                         </div>
                                         <div className="row">
-                                            <div className="col-md-6 col-12">
-                                                <label><i className="fa fa-user-circle"/>Name</label>
-                                                <p>{this.state.user.name}</p>
-                                            </div>
-                                            <div className="col-md-6 col-12">
-                                                <label><i className="fa fa-user-circle"/>Company Name</label>
-                                                <p>{this.state.user.company_name}</p>
-                                            </div>
+                                            <div className="row">
+                                                <div className="col-md-6 col-12">
+                                                    <label><i className="fa fa-user-circle"/>Name</label>
+                                                    <p>{this.state.user.name}</p>
+                                                </div>
+                                                <div className="col-md-6 col-12">
+                                                    <label><i className="fa fa-user-circle"/>Company Name</label>
+                                                    <p>{this.state.user.company_name}</p>
+                                                </div>
 
-                                            <div className="col-md-6 col-12">
-                                                <label><i className="fa fa-envelope"/>Email</label>
-                                                <p>{this.state.user.email}</p>
-                                            </div>
-                                            <div className="col-md-6 col-12">
-                                                <label><i className="fa fa-phone"/>mobile no</label>
-                                                <p>{this.state.user.phone_no}</p>
-                                            </div>
-                                            <div className="col-lg-6 col-12">
-                                                <label><i className="fa fa-map-marker"/>Address</label>
-                                                <p>{this.state.user.address}</p>
-                                            </div>
-                                            <div className="col-lg-6 col-12">
-                                                <label><i className="fa fa-map-marker"/>Country</label>
-                                                <p>{this.state.user.country}</p>
-                                            </div>
-                                            <div className="col-12">
-                                                <label><i className="fa fa-map-marker"/>City</label>
-                                                <p>{this.state.user.city}</p>
-                                            </div>
-                                            <div className="col-md-6 col-12">
-                                                <label><i className="fa fa-map-marker"/>County</label>
-                                                <p>{this.state.user.state}</p>
-                                            </div>
-                                            <div className="col-md-6 col-12">
-                                                <label><i className="fa fa-map-marker"/>Postal Code</label>
-                                                <p>{this.state.user.zipcode}</p>
-                                            </div>
+                                                <div className="col-md-6 col-12">
+                                                    <label><i className="fa fa-envelope"/>Email</label>
+                                                    <p>{this.state.user.email}</p>
+                                                </div>
+                                                <div className="col-md-6 col-12">
+                                                    <label><i className="fa fa-phone"/>mobile no</label>
+                                                    <p>{this.state.user.phone_no}</p>
+                                                </div>
+                                                <div className="col-lg-6 col-12">
+                                                    <label><i className="fa fa-map-marker"/>Address</label>
+                                                    <p>{this.state.user.address}</p>
+                                                </div>
+                                                <div className="col-lg-6 col-12">
+                                                    <label><i className="fa fa-map-marker"/>Country</label>
+                                                    <p>{this.state.user.country}</p>
+                                                </div>
+                                                <div className="col-12">
+                                                    <label><i className="fa fa-map-marker"/>City</label>
+                                                    <p>{this.state.user.city}</p>
+                                                </div>
+                                                <div className="col-md-6 col-12">
+                                                    <label><i className="fa fa-map-marker"/>County</label>
+                                                    <p>{this.state.user.state}</p>
+                                                </div>
+                                                <div className="col-md-6 col-12">
+                                                    <label><i className="fa fa-map-marker"/>Postal Code</label>
+                                                    <p>{this.state.user.zipcode}</p>
+                                                </div>
+                                                <div className="col-md-6 col-12">
+                                                    <label><i className="fa fa-address-card"/>Operator Licence Number</label>
+                                                    <p>{this.state.user.drivers_license}</p>
+                                                </div>
+                                            </div> 
                                             <div className="operator-bus-detail">
                                                 <div className="top">
                                                 <div className="row">
@@ -164,7 +170,7 @@ class View extends Component {
                                                        
                                                         </div>
                                                     </div>
-                                                    </div>
+                                                    </div> 
                                                 </div>
                                                 )}
                                                 </div>

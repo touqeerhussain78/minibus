@@ -85,7 +85,7 @@ class OperatorController extends Controller
             $operator = Operator::findOrFail($request->id);
             if($request->image){
                 $path = 'operator/'.md5($operator->id).'/minibus/';
-                $image = self::upload($request->file('image'), $path, 'public', null);
+                $image = Operator::upload($request->file('image'), $path, 'public', null);
             }
            
             $fields = $request->only($operator->getFillable());
@@ -122,7 +122,7 @@ class OperatorController extends Controller
         if($request->file('files')){
             foreach ($request->file('files') as $key => $file){
                 $path = 'operator/'.md5($operator->id).'/minibus/';
-                $image = self::upload($file, $path, 'public', null);
+                $image = Operator::upload($file, $path, 'public', null);
                 $minibus->media()->save(new \App\Models\Media([
                     'path'   => $image,
                     'status' => 0,
